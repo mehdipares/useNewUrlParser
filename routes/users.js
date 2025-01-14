@@ -11,5 +11,8 @@ router.patch('/:id', service.update);
 //route supprimer utilisateur
 router.delete('/:id', service.delete);
 
+//route authenticate
+router.post('/authenticate', service.authenticate);
+
 
 module.exports = router;
